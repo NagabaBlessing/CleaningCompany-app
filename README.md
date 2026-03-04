@@ -1,9 +1,96 @@
 # CleaningCompany-app
-# CleaningCompany-app
+# CoreCleen Client Dashboard
 
-## Figma
+## Project Overview
+This project is a client-facing web dashboard designed for CoreCleen Solutions Ltd. 
 
-Check out the [Figma prototype](https://www.figma.com/make/FKO1jmz0QBNr3b5M56naRP/Responsive-design-for-devices?fullscreen=1&t=Gl3RlaDDF4XbBdrd-1&preview-route=%2Fdashboard) for a visual representation of the app.
+The platform allows clients to:
+- Submit cleaning service requests
+- View queued requests
+- Track service history
+- Contact support
+
+---
+
+## Objectives
+The goal was to design and implement a responsive and user-friendly dashboard interface while ensuring scalability and maintainability.
+
+---
+
+## Features Implemented
+
+### UI/UX
+- Responsive dashboard layout (Grid & Flexbox)
+- Sidebar navigation
+- Interactive cards
+- Status badges
+
+### Functional Features
+- Service request submission form
+- Query tracking system
+- History page
+- Contact support form
+
+---
+
+## Technologies Used
+- HTML5
+- CSS3 (Flexbox & Grid)
+- JavaScript (Vanilla JS)
+- Figma (Design & Prototyping)
+
+---
+
+## Project Structure
+
+corecleen-dashboard/
+│
+├── index.html
+├── apply.html
+├── history.html
+├── support.html
+├── styles.css
+├── script.js
+└── assets/
+
+---
+
+## Responsiveness
+The layout adapts across:
+- Desktop
+- Tablet
+- Mobile devices
+
+Media queries were used to collapse the sidebar into a hamburger menu on smaller screens.
+
+---
+
+## Interactive Elements
+- Button hover animations
+- Form validation using JavaScript
+- Dynamic status badge styling
+
+---
+
+## 🧪 Usability Testing
+Three usability tests were conducted to identify:
+- Navigation clarity issues
+- Form complexity concerns
+- Mobile layout inconsistencies
+
+Improvements were implemented accordingly.
+
+---
+
+
+## Author
+Blessing Nagabz  
+BSc. Software Engineering  
+Design Engineer Assessment – Kanzu Code
+
+## Figma design files
+
+Check out the [Figma prototype](https://www.figma.com/make/FKO1jmz0QBNr3b5M56naRP/CleaningCompany-app?fullscreen=1&t=Gg6O7owYo8eD9eTn-1)
 
 
 Check out the [Figma desktop design wireframe](https://www.figma.com/make/FKO1jmz0QBNr3b5M56naRP/CleaningCompany-app?t=Tfc0UTNR7VSaixIh-6)
@@ -11,7 +98,7 @@ Check out the [Figma desktop design wireframe](https://www.figma.com/make/FKO1jm
 
 Check out the [Figma mobile design wireframe](https://www.figma.com/make/FKO1jmz0QBNr3b5M56naRP/CleaningCompany-app?t=SlGNza6iDILqUnkb-1)
 
-## Installation
+## How to run
 
 To get started with the CleaningCompany app, follow these steps:
 
