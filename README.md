@@ -24,12 +24,14 @@ The goal was to design and implement a responsive and user-friendly dashboard in
 - Sidebar navigation
 - Interactive cards
 - Status badges
+- Form Validation
 
 ### Functional Features
 - Service request submission form
 - Query tracking system
 - History page
 - Contact support form
+- Form Validation
 
 ---
 
@@ -90,14 +92,11 @@ Design Engineer Assessment – Kanzu Code
 
 ## Figma design files
 
-Check out the [Figma prototype](https://www.figma.com/make/FKO1jmz0QBNr3b5M56naRP/CleaningCompany-app?fullscreen=1&t=Gg6O7owYo8eD9eTn-1)
+Check out the [Figma prototype](https://www.figma.com/make/FKO1jmz0QBNr3b5M56naRP/CleaningCompany-app?fullscreen=1&t=DHr51GyKnUJ9eJmu-1) 
 
+Check out the [Figma desktop and mobile design wireframe](https://www.figma.com/make/FKO1jmz0QBNr3b5M56naRP/CleaningCompany-app?t=wjNldFWTKNrVWIjR-1)
 
-Check out the [Figma desktop design wireframe](https://www.figma.com/make/FKO1jmz0QBNr3b5M56naRP/CleaningCompany-app?t=Tfc0UTNR7VSaixIh-6)
-
-
-Check out the [Figma mobile design wireframe](https://www.figma.com/make/FKO1jmz0QBNr3b5M56naRP/CleaningCompany-app?t=SlGNza6iDILqUnkb-1)
-
+https://www.figma.com/make/FKO1jmz0QBNr3b5M56naRP/CleaningCompany-app?t=wjNldFWTKNrVWIjR-6
 ## How to run
 
 To get started with the CleaningCompany app, follow these steps:
