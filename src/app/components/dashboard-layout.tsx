@@ -16,7 +16,8 @@ import {
 import { cn } from "../components/ui/utils";
 import { useTheme } from "./theme-provider";
 import { Button } from "./ui/button";
-import logoImage from "../../../assets/logo.png";
+// import logoImage from "../../../assets/logo.png";
+import logoImage from "../../assets/logo.png";
 
 const navigation = [
   { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
@@ -26,6 +27,8 @@ const navigation = [
   { name: 'Contact Support', href: '/dashboard/support', icon: Headset },
   { name: 'Profile', href: '/dashboard/profile', icon: User },
 ];
+
+import React from 'react';
 
 export function DashboardLayout() {
   const location = useLocation();

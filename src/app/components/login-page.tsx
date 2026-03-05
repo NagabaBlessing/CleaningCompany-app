@@ -5,8 +5,10 @@ import { Button } from "./ui/button";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { Mail, Lock, User, Phone } from "lucide-react";
-import logoImage from "../../../assets/logo.png";
+import logoImage from "../../assets/logo.png";
 
+
+import React from 'react';
 
 export function LoginPage() {
   const navigate = useNavigate();

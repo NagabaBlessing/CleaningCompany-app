@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
-import logoImage from "../../../assets/logo.png";
+import logoImage from "../../assets/logo.png";
 
 const services = [
   'Office Cleaning',
@@ -26,6 +26,8 @@ const teamMembers = [
   { name: 'Mary Caroline Nakyazze', role: 'Accountant' },
   { name: 'Bernard Mabonga', role: 'Company Secretary' },
 ];
+
+import React from 'react';
 
 export function LandingPage() {
   return (

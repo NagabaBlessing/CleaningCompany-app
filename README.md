@@ -96,7 +96,6 @@ Check out the [Figma prototype](https://www.figma.com/make/FKO1jmz0QBNr3b5M56naR
 
 Check out the [Figma desktop and mobile design wireframe](https://www.figma.com/make/FKO1jmz0QBNr3b5M56naRP/CleaningCompany-app?t=wjNldFWTKNrVWIjR-1)
 
-https://www.figma.com/make/FKO1jmz0QBNr3b5M56naRP/CleaningCompany-app?t=wjNldFWTKNrVWIjR-6
 ## How to run
 
 To get started with the CleaningCompany app, follow these steps:
@@ -118,10 +117,10 @@ To get started with the CleaningCompany app, follow these steps:
 
 4. **Start the application:**
     ```bash
-    npm start
+    npm run dev
     ```
 
 ## Usage
 
-After starting the application, you can access it at `http://localhost:3000`.
+After starting the application, you can access it at `http://localhost:5174/`.
 
