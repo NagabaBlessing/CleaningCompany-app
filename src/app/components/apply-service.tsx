@@ -75,9 +75,7 @@ export function ApplyService() {
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Service Type */}
             <div className="space-y-2">
-            <Label className="text-gray-900 dark:text-gray-100" htmlFor="service">
-  Service Type *
-</Label>
+            <Label className="text-gray-900 dark:text-gray-100" htmlFor="service">Service Type *</Label>
               <Select value={service} onValueChange={setService} required>
               <SelectTrigger className="w-full bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-700">
                   <SelectValue placeholder="Select a service" />
@@ -98,37 +96,39 @@ export function ApplyService() {
 
             {/* Date Picker */}
             <div className="space-y-2">
-              <Label>Preferred Date *</Label>
-              <Popover>
-                <PopoverTrigger asChild>
-                  <Button
-                    variant="outline"
-                    className={cn(
-                      "w-full justify-start text-left",
-                      !date && "text-muted-foreground"
-                    )}
-                  >
-                    <CalendarIcon className="mr-2 h-4 w-4" />
-                    {date ? format(date, "PPP") : <span>Pick a date</span>}
-                  </Button>
-                </PopoverTrigger>
-                <PopoverContent className="w-auto p-0 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-lg">
-                  <Calendar
-                    mode="single"
-                    selected={date}
-                    onSelect={setDate}
-                    initialFocus
-                    disabled={(date) => date < new Date()}
-                  />
-                </PopoverContent>
-              </Popover>
+            <Label className="text-gray-900 dark:text-gray-100" htmlFor="date">Preferred Date *</Label>
+            <Popover>
+  <PopoverTrigger>
+    <Button
+      variant="outline"
+      type="button"
+      className={cn(
+        "w-full justify-start text-left bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-700",
+        !date && "text-gray-500 dark:text-gray-400"
+      )}
+    >
+      <CalendarIcon className="text-gray-900 dark:text-gray-100" />
+      {date ? format(date, "PPP") : "Pick a date"}
+    </Button>
+  </PopoverTrigger>
+
+  <PopoverContent
+    className="w-auto p-0 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-lg text-gray-900 dark:text-gray-100"
+    align="start"
+  >
+    <Calendar
+      mode="single"
+      selected={date}
+      onSelect={(selectedDate) => setDate(selectedDate)}
+      initialFocus
+    />
+  </PopoverContent>
+</Popover>
             </div>
 
             {/* Location */}
             <div className="space-y-2">
-            <Label className="text-gray-900 dark:text-gray-100" htmlFor="service">
-  Service Location *
-</Label>
+            <Label className="text-gray-900 dark:text-gray-100" htmlFor="location">Service Location *</Label>
               <Input
                 className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-700"
                 id="location"
@@ -141,7 +141,7 @@ export function ApplyService() {
 
             {/* Additional Notes */}
             <div className="space-y-2">
-            <Label className="text-gray-900 dark:text-gray-100" htmlFor="service">Additional Notes</Label>
+            <Label className="text-gray-900 dark:text-gray-100" htmlFor="notes">Additional Notes</Label>
               <Textarea
                 className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-700"
                 id="notes"
@@ -162,10 +162,10 @@ export function ApplyService() {
                 Submit Request
               </Button>
               <Button
-                type="button"
-                variant="outline"
-                onClick={() => navigate("/")}
-              >
+  type="button"
+  variant="outline"
+  className="text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-700"
+  onClick={() => navigate("/")}>
                 Cancel
               </Button>
             </div>

@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
@@ -52,27 +53,27 @@ export function Profile() {
                 </div>
               </div>
               {!isEditing ? (
-                <Button
+                <Button className="text-gray-900 dark:text-gray-100"
                   onClick={() => setIsEditing(true)}
                   variant="outline"
                 >
-                  <Edit className="h-4 w-4 mr-2" />
+                  <Edit className="h-4 w-4 mr-2 text-gray-900 dark:text-gray-100" />
                   Edit Profile
                 </Button>
               ) : (
-                <div className="flex gap-2">
+                <div className="flex gap-2 text-gray-900 dark:text-gray-100">
                   <Button
                     onClick={handleSave}
-                    className="bg-[var(--corecleen-green)] hover:opacity-90"
+                    className="bg-[var(--corecleen-green)] hover:opacity-90 text-gray-900 dark:text-gray-100"
                   >
-                    <Save className="h-4 w-4 mr-2" />
+                    <Save className="h-4 w-4 mr-2 text-gray-900 dark:text-gray-100" />
                     Save
                   </Button>
                   <Button
                     onClick={handleCancel}
                     variant="outline"
                   >
-                    <X className="h-4 w-4 mr-2" />
+                    <X className="h-4 w-4 mr-2 text-gray-900 dark:text-gray-100" />
                     Cancel
                   </Button>
                 </div>
@@ -81,7 +82,7 @@ export function Profile() {
 
             <div className="space-y-4">
               <div className="space-y-2">
-                <Label htmlFor="name">Full Name</Label>
+                <Label className="text-gray-900 dark:text-gray-100" htmlFor="name">Full Name</Label>
                 <div className="flex items-center gap-3">
                   <User className="h-5 w-5 text-gray-400" />
                   <Input
@@ -89,13 +90,14 @@ export function Profile() {
                     value={editedProfile.name}
                     onChange={(e) => setEditedProfile({ ...editedProfile, name: e.target.value })}
                     disabled={!isEditing}
-                    className={!isEditing ? 'border-transparent' : ''}
+                    className={!isEditing ? 'border-transparent text-gray-900 dark:text-gray-100' : ''}
+                    
                   />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
+                <Label className="text-gray-900 dark:text-gray-100" htmlFor="email">Email</Label>
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-gray-400" />
                   <Input
@@ -104,13 +106,13 @@ export function Profile() {
                     value={editedProfile.email}
                     onChange={(e) => setEditedProfile({ ...editedProfile, email: e.target.value })}
                     disabled={!isEditing}
-                    className={!isEditing ? 'border-transparent' : ''}
+                    className={!isEditing ? 'border-transparent text-gray-900 dark:text-gray-100' : ''}
                   />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="phone">Phone</Label>
+              <Label className="text-gray-900 dark:text-gray-100" htmlFor="phone">Phone</Label>
                 <div className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-gray-400" />
                   <Input
@@ -119,13 +121,13 @@ export function Profile() {
                     value={editedProfile.phone}
                     onChange={(e) => setEditedProfile({ ...editedProfile, phone: e.target.value })}
                     disabled={!isEditing}
-                    className={!isEditing ? 'border-transparent' : ''}
+                    className={!isEditing ? 'border-transparent text-gray-900 dark:text-gray-100' : ''}
                   />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="address">Address</Label>
+              <Label className="text-gray-900 dark:text-gray-100" htmlFor="address">Address</Label>
                 <div className="flex items-center gap-3">
                   <MapPin className="h-5 w-5 text-gray-400" />
                   <Input
@@ -133,7 +135,7 @@ export function Profile() {
                     value={editedProfile.address}
                     onChange={(e) => setEditedProfile({ ...editedProfile, address: e.target.value })}
                     disabled={!isEditing}
-                    className={!isEditing ? 'border-transparent' : ''}
+                    className={!isEditing ? 'border-transparent text-gray-900 dark:text-gray-100' : ''}
                   />
                 </div>
               </div>
@@ -158,11 +160,11 @@ export function Profile() {
 
           {/* Preferences Card */}
           <Card className="p-6">
-            <h3 className="text-gray-900 mb-4">Preferences</h3>
+            <h3 className="mb-4 text-gray-900 dark:text-gray-100">Preferences</h3>
             <div className="space-y-4">
               <div className="flex items-center justify-between py-3 border-b border-gray-100">
                 <div>
-                  <p className="text-gray-900">Email Notifications</p>
+                  <p className="text-gray-900 dark:text-gray-100">Email Notifications</p>
                   <p className="text-sm text-gray-500">Receive updates about your services</p>
                 </div>
                 <label className="relative inline-flex items-center cursor-pointer">
@@ -172,7 +174,7 @@ export function Profile() {
               </div>
               <div className="flex items-center justify-between py-3 border-b border-gray-100">
                 <div>
-                  <p className="text-gray-900">SMS Notifications</p>
+                  <p className="text-gray-900 dark:text-gray-100">SMS Notifications</p>
                   <p className="text-sm text-gray-500">Get text updates on your phone</p>
                 </div>
                 <label className="relative inline-flex items-center cursor-pointer">
@@ -182,7 +184,7 @@ export function Profile() {
               </div>
               <div className="flex items-center justify-between py-3">
                 <div>
-                  <p className="text-gray-900">Marketing Updates</p>
+                  <p className="text-gray-900 dark:text-gray-100">Marketing Updates</p>
                   <p className="text-sm text-gray-500">Receive special offers and promotions</p>
                 </div>
                 <label className="relative inline-flex items-center cursor-pointer">

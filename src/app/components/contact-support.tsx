@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
@@ -133,12 +134,12 @@ export function ContactSupport() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="space-y-2">
-                  <Label htmlFor="subject">Subject *</Label>
+                  <Label className="text-gray-900 dark:text-gray-100" htmlFor="subject">Subject *</Label>
                   <Select value={subject} onValueChange={setSubject} required>
-                    <SelectTrigger className="w-full">
+                    <SelectTrigger className="w-full bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-700">  
                       <SelectValue placeholder="Select a subject" />
                     </SelectTrigger>
-                    <SelectContent>
+                    <SelectContent className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
                       <SelectItem value="general">General Inquiry</SelectItem>
                       <SelectItem value="service">Service Question</SelectItem>
                       <SelectItem value="billing">Billing Issue</SelectItem>
@@ -150,7 +151,9 @@ export function ContactSupport() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message">Message *</Label>
+                  <Label className="text-gray-900 dark:text-gray-100" htmlFor="message">
+  Message *
+</Label>
                   <Textarea
                     id="message"
                     placeholder="Type your message here..."
@@ -158,6 +161,7 @@ export function ContactSupport() {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     required
+                    className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-700"
                   />
                 </div>
 

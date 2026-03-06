@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
@@ -9,6 +10,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "./ui/dialog";
+
 
 const requests = [
   {
@@ -87,16 +89,16 @@ export function MyRequests() {
               <Button
                 variant="outline"
                 size="sm"
-                className="flex-1"
+                className="flex-1 text-gray-900 dark:text-gray-100"
                 onClick={() => setSelectedRequest(request)}
               >
-                <Eye className="h-4 w-4 mr-2" />
+                <Eye className="h-4 w-4 mr-2 text-gray-900 dark:text-gray-100" />
                 View Details
               </Button>
               <Button
                 variant="outline"
                 size="sm"
-                className="text-red-600 hover:text-red-700"
+                className="text-red-600 hover:text-red-700 text-gray-900 dark:text-gray-100"
               >
                 <X className="h-4 w-4" />
               </Button>
