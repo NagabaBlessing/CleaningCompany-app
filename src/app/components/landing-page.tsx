@@ -3,21 +3,22 @@ import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import logoImage from "../../assets/logo.png";
+import React from 'react';
 
 const services = [
   'Office Cleaning',
   'Full Home Deep Cleaning',
   'Full Home Basic Cleaning',
-  'Event Pre & Post Cleaning',
+  'Commercial Deep Cleaning',
   'Fumigation',
-  'Move - In/out cleaning',
+  'Move - In - out cleaning',
   'Post Construction Cleaning',
   'Garbage Collection',
   'Roof Cleaning',
   'Window Cleaning',
   'Retail Cleaning',
   'Upholstery Cleaning',
-  'Laundry Services/Ironing',
+  'End of Tenancy Cleaning',
 ];
 
 const teamMembers = [
@@ -27,7 +28,6 @@ const teamMembers = [
   { name: 'Bernard Mabonga', role: 'Company Secretary' },
 ];
 
-import React from 'react';
 
 export function LandingPage() {
   return (
@@ -36,7 +36,7 @@ export function LandingPage() {
       <header className="sticky top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 shadow-sm">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src={logoImage} alt="CoreCleen Solutions Ltd" className="h-12 w-auto" />
+            <img src={logoImage} alt="CoreCleen Solutions Ltd" className="h-24 w-auto" />
           </div>
           <Link to="/login">
             <Button className="bg-[var(--corecleen-blue)] hover:opacity-90 text-white">
@@ -50,10 +50,10 @@ export function LandingPage() {
       <section className="bg-gradient-to-br from-[var(--corecleen-blue)] to-[var(--corecleen-teal)] text-white py-20 px-4">
         <div className="container mx-auto text-center max-w-4xl">
           <div className="flex items-center justify-center gap-3 mb-6">
-            <img src={logoImage} alt="CoreCleen Solutions Ltd" className="h-20 w-auto" />
+            <img src={logoImage} alt="CoreCleen Solutions Ltd" className="h-32 w-auto" />
           </div>
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-            Unwired in a Clean & Spotless Space
+            Breathe in a Clean Space
           </h1>
           <p className="text-xl mb-8 text-white/90">
             After a long & tiring day, nothing beats coming home to a clean and spotless space. We've got you covered
@@ -77,18 +77,25 @@ export function LandingPage() {
       <section className="py-16 px-4 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              ABOUT <span className="text-[var(--corecleen-blue)]">CORECLEEN</span>
-            </h2>
+            
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">  
+          <Card className="p-8">
+  <div className="w-12 h-12 rounded-full bg-[var(--corecleen-orange)] flex items-center justify-center mb-4">
+    <span className="text-white text-xl">🏢</span>
+  </div>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">ABOUT CORECLEEN</h3>
+  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+  Corecleen aims to build and maintain long-term client relationships, with a competitive and excellent cleaning service. The commitment to excellence and professionalism by our cleaning team is why we have earned the loyalty and trust of our regular customers and are the best choice for new clients.
+  </p>
+</Card>
             <Card className="p-8">
               <div className="w-12 h-12 rounded-full bg-[var(--corecleen-blue)] flex items-center justify-center mb-4">
                 <span className="text-white text-xl">🎯</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">OUR MISSION</h3>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                To provide our clients with top-quality professional and friendly cleaning services delivered by a competent and excellent cleaning service provider. The commitment and professionalism by our cleaning team is why we have earned the loyalty and trust of our current clients, and we are the best choice for new clients.
+                To provide our clients with top-quality professional and friendly cleaning services that supercede their expectations. By making the interests of our clients our number one priority we will earn their trust and loyalty and they will become our lifelong customers.
               </p>
             </Card>
             <Card className="p-8">
@@ -97,9 +104,40 @@ export function LandingPage() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">OUR VISION</h3>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                To continually provide excellent services that will propel us to become a leading brand in the cleaning industry in Uganda.
+                To continually provide excellent services that will propel us to become a household name within the cleaning industry in Uganda.
               </p>
             </Card>
+            <Card className="p-8">
+  <div className="w-12 h-12 rounded-full bg-[var(--corecleen-green)] flex items-center justify-center mb-4">
+    <span className="text-white text-xl">⭐</span>
+  </div>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">OUR VALUES</h3>
+
+  <ul className="text-gray-600 dark:text-gray-400 leading-relaxed space-y-2">
+  <li><strong>Service Excellence</strong> - Taking responsibility to complete your tasks, perform the duties required by your job and be present for shifts in order to fulfill the goals of the company.</li>
+  <li><strong>Respect</strong> - We respect the individual and believe that individuals who are treated with respect and given responsibility respond by giving their best.</li>
+  <li><strong>Accountability</strong> - We own problems and we are always responsive.</li>
+  <li><strong>Reliability</strong> - Being punctual and dependable, committed to the team, our customers and the company.</li>
+  <li><strong>Team Work</strong> - Increased speed, shared satisfaction, creative solutions and working together.</li>
+</ul>
+</Card>
+
+
+
+<Card className="p-8">
+  <div className="w-12 h-12 rounded-full bg-[var(--corecleen-blue)] flex items-center justify-center mb-4">
+    <span className="text-white text-xl">🎯</span>
+  </div>
+  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">CUSTOMER GOALS</h3>
+  <ul className="text-gray-600 dark:text-gray-400 leading-relaxed space-y-2">
+  <li>Provide the highest standard of service and workmanship.</li>
+  <li>To build long term relationships with our customers by providing quality services at competitive prices.</li>
+  <li>Maintaining integrity and initiative.</li>
+  <li>Professionalism and pride in our position in the market place.</li>
+  <li>Long term stability.</li>
+  <li>Maintain a well-trained and motivated staff.</li>
+</ul>
+</Card>
           </div>
         </div>
       </section>
@@ -165,8 +203,8 @@ export function LandingPage() {
               </div>
               <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Call Us</h3>
               <p className="text-gray-600 dark:text-gray-400">+256 (0) 707265146</p>
-              <p className="text-gray-600 dark:text-gray-400">+256 (0) 785131900</p>
-              <p className="text-gray-600 dark:text-gray-400">+256 (0) 782928848</p>
+              <p className="text-gray-600 dark:text-gray-400">+256 (0) 786151990</p>
+              <p className="text-gray-600 dark:text-gray-400">+256 (0) 782923848</p>
             </Card>
             <Card className="p-8 text-center hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 rounded-full bg-[var(--corecleen-teal)] flex items-center justify-center mx-auto mb-4">
@@ -180,8 +218,8 @@ export function LandingPage() {
                 <MapPin className="h-8 w-8 text-white" />
               </div>
               <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Find Us At</h3>
-              <p className="text-gray-600 dark:text-gray-400">Plot 97 Bukoto street ggp, Bin it services</p>
-              <p className="text-gray-600 dark:text-gray-400">P.O. Box 114720 Kampala Uganda</p>
+              <p className="text-gray-600 dark:text-gray-400">Plot 97 Bukoto street opp. Bin it services</p>
+              <p className="text-gray-600 dark:text-gray-400">P.O. Box 116729 Kampala Uganda</p>
             </Card>
           </div>
           <div className="text-center mt-8">
@@ -208,7 +246,7 @@ export function LandingPage() {
       <footer className="bg-[var(--corecleen-blue)] text-white py-8 px-4">
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <img src={logoImage} alt="CoreCleen Solutions Ltd" className="h-10 w-auto brightness-0 invert" />
+            <img src={logoImage} alt="CoreCleen Solutions Ltd" className="h-20 w-auto brightness-0 invert" />
           </div>
           <p className="text-white/80 text-sm">© 2026 CoreCleen Solutions Ltd. All rights reserved.</p>
         </div>

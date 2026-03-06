@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from "react";
 import { Link, Outlet, useLocation } from "react-router";
 import { 
@@ -28,7 +29,6 @@ const navigation = [
   { name: 'Profile', href: '/dashboard/profile', icon: User },
 ];
 
-import React from 'react';
 
 export function DashboardLayout() {
   const location = useLocation();
@@ -40,7 +40,7 @@ export function DashboardLayout() {
       {/* Mobile Header */}
       <div className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-[var(--corecleen-blue)] dark:bg-gray-900 text-white px-4 py-4 flex items-center justify-between shadow-md">
         <div className="flex items-center gap-2">
-          <img src={logoImage} alt="CoreCleen" className="h-8 w-auto dark:brightness-0 dark:invert" />
+          <img src={logoImage} alt="CoreCleen" className="h-24 w-auto dark:brightness-0 dark:invert" />
         </div>
         <div className="flex items-center gap-2">
           <button
@@ -105,7 +105,7 @@ export function DashboardLayout() {
         {/* Logo */}
         <div className="p-6 border-b border-gray-200 dark:border-gray-800">
           <div className="flex items-center gap-3">
-            <img src={logoImage} alt="CoreCleen Solutions Ltd" className="h-10 w-auto" />
+            <img src={logoImage} alt="CoreCleen Solutions Ltd" className="h-24 w-auto" />
           </div>
         </div>
 

@@ -17,6 +17,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 import { format } from "date-fns";
 import { CalendarIcon, CheckCircle } from "lucide-react";
 import { cn } from "./ui/utils";
+import React from "react";
 
 const services = [
   'Office Cleaning',
@@ -70,18 +71,24 @@ export function ApplyService() {
           <p className="text-base text-gray-700 dark:text-gray-300">Fill out the form below to request a cleaning service.</p>
         </div>
 
-        <Card className="p-6 lg:p-8">
+        <Card className="p-6 lg:p-8 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Service Type */}
             <div className="space-y-2">
-              <Label htmlFor="service">Service Type *</Label>
+            <Label className="text-gray-900 dark:text-gray-100" htmlFor="service">
+  Service Type *
+</Label>
               <Select value={service} onValueChange={setService} required>
-                <SelectTrigger className="w-full">
+              <SelectTrigger className="w-full bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-700">
                   <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700">
                   {services.map((service) => (
-                    <SelectItem key={service} value={service}>
+                    <SelectItem
+                    key={service}
+                    value={service}
+                    className="text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  >
                       {service}
                     </SelectItem>
                   ))}
@@ -105,7 +112,7 @@ export function ApplyService() {
                     {date ? format(date, "PPP") : <span>Pick a date</span>}
                   </Button>
                 </PopoverTrigger>
-                <PopoverContent className="w-auto p-0">
+                <PopoverContent className="w-auto p-0 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-lg">
                   <Calendar
                     mode="single"
                     selected={date}
@@ -119,8 +126,11 @@ export function ApplyService() {
 
             {/* Location */}
             <div className="space-y-2">
-              <Label htmlFor="location">Service Location *</Label>
+            <Label className="text-gray-900 dark:text-gray-100" htmlFor="service">
+  Service Location *
+</Label>
               <Input
+                className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-700"
                 id="location"
                 placeholder="Enter address or location"
                 value={location}
@@ -131,8 +141,9 @@ export function ApplyService() {
 
             {/* Additional Notes */}
             <div className="space-y-2">
-              <Label htmlFor="notes">Additional Notes</Label>
+            <Label className="text-gray-900 dark:text-gray-100" htmlFor="service">Additional Notes</Label>
               <Textarea
+                className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-700"
                 id="notes"
                 placeholder="Any specific requirements or instructions..."
                 rows={4}

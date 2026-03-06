@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from "react";
 import { useNavigate, Link } from "react-router";
 import { Card } from "./ui/card";
@@ -8,7 +9,6 @@ import { Mail, Lock, User, Phone } from "lucide-react";
 import logoImage from "../../assets/logo.png";
 
 
-import React from 'react';
 
 export function LoginPage() {
   const navigate = useNavigate();
@@ -38,7 +38,7 @@ export function LoginPage() {
         {/* Logo */}
         <div className="text-center mb-8">
           <Link to="/" className="inline-flex items-center gap-3 text-white hover:opacity-80 transition-opacity">
-            <img src={logoImage} alt="CoreCleen Solutions Ltd" className="h-16 w-auto brightness-0 invert" />
+            <img src={logoImage} alt="CoreCleen Solutions Ltd" className="h-24 w-auto brightness-0 invert" />
           </Link>
         </div>
 
@@ -182,13 +182,6 @@ export function LoginPage() {
               ← Back to home
             </Link>
           </div>
-        </Card>
-
-        {/* Demo Credentials */}
-        <Card className="mt-4 p-4 bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800">
-          <p className="text-sm text-gray-700 dark:text-gray-300 text-center">
-            <strong>Demo:</strong> Use any email and password to sign in
-          </p>
         </Card>
       </div>
     </div>
