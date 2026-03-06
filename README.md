@@ -1,5 +1,4 @@
 # CleaningCompany-app
-# CoreCleen Client Dashboard
 
 ## Project Overview
 This project is a client-facing web dashboard designed for CoreCleen Solutions Ltd. 
@@ -10,12 +9,10 @@ The platform allows clients to:
 - Track service history
 - Contact support
 
----
 
 ## Objectives
 The goal was to design and implement a responsive and user-friendly dashboard interface while ensuring scalability and maintainability.
 
----
 
 ## Features Implemented
 
@@ -36,7 +33,6 @@ The goal was to design and implement a responsive and user-friendly dashboard in
 - Contact support form
 - Form Validation
 
----
 
 ## Technologies Used
 - HTML5
@@ -46,8 +42,6 @@ The goal was to design and implement a responsive and user-friendly dashboard in
 - shadcn/ui (Provided pre-built UI components)
 - date-fns (Used for formatting and managing dates in the calendar component)
 - Git and GitHub
-
----
 
 ## Project Structure
 
@@ -76,25 +70,17 @@ CleaningCompany-app/
  ├── README.md
  ├── package.json
 
----
-
 ## Responsiveness
 The layout adapts across:
 - Desktop
 - Tablet
 - Mobile devices
 
----
-
 ## Interactive Elements
 - Button hover animations
 - Form validation using JavaScript
 - Dynamic status badge styling
 
----
-
-
----
 
 # Usability Testing & Feedback
 
@@ -107,8 +93,6 @@ Some form labels and text  were difficult to read in dark mode.
 Updated Tailwind classes to include dark mode variants.
 
 
----
-
 ### Issue 2: Dropdown Text Overlapping
 Dropdown menu items appeared cluttered and overlapped with surrounding content.
 
@@ -116,7 +100,6 @@ Dropdown menu items appeared cluttered and overlapped with surrounding content.
 Improved spacing and contrast.
 
 
----
 
 ### Issue 3: Calendar Closing Too Quickly
 The calendar picker initially closed immediately when clicked, making date selection difficult.
@@ -124,7 +107,6 @@ The calendar picker initially closed immediately when clicked, making date selec
 **Solution**
 Adjusted so the calendar remains open until a date is selected.
 
----
 
 # Collaboration With Back-End Developers
 
@@ -138,7 +120,6 @@ Key practices include:
 - Testing API responses
 
 
----
 
 # Handling Client Feedback
 
@@ -150,7 +131,6 @@ Changes are evaluated based on:
 - technical feasibility
 - feedback is implemented without compromising usability principles such as accessibility, readability, and responsive design.
 
----
 
 # Known Limitations
 
@@ -162,7 +142,6 @@ Changes are evaluated based on:
 - No admin login
 
 
----
 
 ## Author
 Blessing Nagaba 
