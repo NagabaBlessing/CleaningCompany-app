@@ -1,9 +1,10 @@
+import React from 'react';
 import { Link } from "react-router";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import logoImage from "../../assets/logo.png";
-import React from 'react';
+
 
 const services = [
   'Office Cleaning',
